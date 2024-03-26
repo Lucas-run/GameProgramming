@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "SDL2",
+			"command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"main.cpp",
+				"-g",
+				"game.cpp",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-IC:/SDL/SDL2-2.30.1/x86_64-w64-mingw32/include",
+				"-LC:/SDL/SDL2-2.30.1/x86_64-w64-mingw32/lib",
+				"-lmingw32",
+				"-lSDL2main",
+				"-lSDL2",
+				"-mwindows"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\Program Files\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
